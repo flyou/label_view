@@ -1,14 +1,10 @@
 # label_view
 
-flutter LabelView
-
-## Getting Started
-
-### 1.import LableView.dart
+## 1.import LableView.dart
 
 > import 'package:label_view/LableView.dart';
 
-### 2.use in Code
+## 2.use in Code
 
 ```
 void main() {
@@ -31,17 +27,18 @@ void main() {
  ```
 
 
-### 
+## desc of aattribute 
 
- > final Size size; //the size of labelView
- > final String labelText;// label text
- > final TextStyle textStyle;// label text style
- > final Color labelColor;// label color
- > final Color backgroundColor;// label background color
- > final bool useAngle;// use angele or false
- > final labelAlignment;// labelAlignment in widget
+ > final Size size; //the size of labelView <br/>
+ > final String labelText;// label text<br/>
+ > final TextStyle textStyle;// label text style<br/>
+ > final Color labelColor;// label color<br/>
+ > final Color backgroundColor;// label background color<br/>
+ > final bool useAngle;// use angele or false<br/>
+ > final labelAlignment;// labelAlignment in widget<br/>
  
  
+## picture
 
 ![](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fwjjbakm0qj30p806f0sv.jpg)
 
@@ -56,6 +53,7 @@ void main() {
 
 ![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwkeqvquo1j30u00c4mx3.jpg)
 
+<br/>
 
 ![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwkgh9lvntj30ci0m8q70.jpg)
 
