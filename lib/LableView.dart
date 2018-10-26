@@ -23,13 +23,15 @@ class LabelView extends StatefulWidget {
 
   final Widget child;
 
-  LabelView(this.child, this.size,
+  LabelView( this.size,
       {this.labelColor = Colors.blue,
       this.labelText = "HOT",
       this.useAngle = true,
       this.backgroundColor = Colors.transparent,
       this.labelAlignment = LabelAlignment.leftTop,
-      this.textStyle});
+      this.textStyle,
+      this.child
+      });
 
   @override
   State<StatefulWidget> createState() {
@@ -47,8 +49,8 @@ class LabelViewState extends State<LabelView> {
   @override
   Widget build(BuildContext context) {
     var offsetX = widget.size.width > widget.size.height
-        ? widget.size.height / 4.5
-        : widget.size.width / 4.5;
+        ? widget.size.height / 5
+        : widget.size.width / 5;
     switch (widget.labelAlignment) {
       case LabelAlignment.leftTop:
         offset = Offset(offsetX, 0);
@@ -76,7 +78,7 @@ class LabelViewState extends State<LabelView> {
       color: widget.backgroundColor,
       child: Stack(
         children: <Widget>[
-          widget.child,
+          widget.child==null?SizedBox():widget.child,
           CustomPaint(
             size: widget.size,
             painter: LabelViewPainter(
